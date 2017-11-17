@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context="com.example.student2.mycalc.MainActivity">
+
+    <EditText
+        android:id="@+id/First"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Second"
+        android:hint="First"/>
+
+    <EditText
+        android:id="@+id/Second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:hint="Second"/>
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Second"
+        android:hint="Output"
+        android:textSize="40sp"/>
+
+    <Button
+        android:id="@+id/PlusButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="start"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="+"
+        android:textSize="45sp"/>
+
+    <Button
+        android:id="@+id/MinusButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="-"
+        android:textSize="45sp"/>
+
+    <Button
+        android:id="@+id/DivButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="/"
+        android:textSize="45sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/MulButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="*"
+        android:textSize="45sp"/>
+</RelativeLayout>

@@ -6,7 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.student2.mycalc.MainActivity"
-    android:orientation="vertical">
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
 
     <EditText
         android:id="@+id/First"
@@ -41,10 +48,10 @@
         android:layout_marginBottom="20dp"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"/>
-
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         tools:context="com.example.student2.mycalc.MainActivity">
 
@@ -52,22 +59,51 @@
             android:id="@+id/PlusButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="top"
+            android:layout_gravity="start"
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
             android:background="@color/PlusColor"
             android:text="+"
-            android:textSize="45sp" />
+            android:textSize="45sp"/>
 
         <Button
             android:id="@+id/MinusButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="end|end"
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
+            android:layout_gravity="end"
             android:background="@color/MinusColor"
             android:text="-"
-            android:textSize="45sp" />
+            android:textSize="45sp"/>
     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:context="com.example.student2.mycalc.MainActivity">
+
+            <Button
+                android:id="@+id/DivButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/MinusColor"
+                android:text="/"
+                android:textSize="45sp"/>
+
+            <Button
+                android:id="@+id/MulButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.5"
+                android:gravity="end|bottom"
+                android:background="@color/PlusColor"
+                android:text="*"
+                android:textSize="45sp"/>
+        </LinearLayout>
 </LinearLayout>
